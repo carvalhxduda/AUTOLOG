@@ -2,7 +2,6 @@
 
 AUTOLOG analisa logs do Genesys Cloud Background Assistant (GCBA), identifica linhas de erro e gera um relatorio em PDF com cores para facilitar a leitura operacional.
 
-O uso principal nao depende do Codex ou de IA. Depois de instalado, o time pode executar o script diretamente com Python.
 
 ## O Que O Projeto Faz
 
@@ -41,7 +40,7 @@ pip install -r requirements.txt
 
 ## Gerar Apenas O PDF
 
-Este e o fluxo recomendado para uso pelo time.
+Este e o fluxo recomendado para uso:
 
 ```powershell
 python gerar_relatorio_pdf.py
@@ -53,7 +52,7 @@ Saida gerada:
 output/pdf/relatorio_analise_gcba.pdf
 ```
 
-O PDF e criado diretamente a partir dos logs, sem precisar gerar CSV antes.
+O PDF e criado diretamente a partir dos logs.
 
 ## Gerar CSV Detalhado
 
@@ -99,7 +98,6 @@ O parser extrai os seguintes campos dos logs:
 
 ## Observacoes Para O Time
 
-- O Codex nao e necessario para executar a automacao.
 - O arquivo PDF e o produto final recomendado para apresentacao.
 - O CSV e opcional e serve para analise detalhada.
 - Logs, CSVs e PDFs gerados localmente nao devem ser commitados no GitHub, pois podem conter dados operacionais.
