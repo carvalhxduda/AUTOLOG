@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+
+# Dados locais e arquivos gerados
+LOGS/
+tmp/
+output/
+erros_mapeados_gcba.csv
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
